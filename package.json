@@ -1,0 +1,33 @@
+{
+  "name": "netrc.actions",
+  "version": "0.0.0",
+  "description": "Authenticate with .netrc in a GitHub Action.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tsc --noEmit && eslint --ext .ts src",
+    "fix": "eslint --fix --ext .ts src",
+    "test": "",
+    "build": "ncc build src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altipla-consulting/netrc.actions.git"
+  },
+  "author": "Altipla Consulting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altipla-consulting/netrc.actions/issues"
+  },
+  "homepage": "https://github.com/altipla-consulting/netrc.actions#readme",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@altipla/eslint-config-ts": "^0.5.0",
+    "@types/node": "^18.7.23",
+    "@vercel/ncc": "^0.34.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
+}

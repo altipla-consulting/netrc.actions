@@ -1,0 +1,16 @@
+
+name: Authenticate with .netrc
+description: Authenticate with .netrc in a GitHub Action.
+inputs:
+  machine:
+    description: Name of the machine.
+    required: true
+  user:
+    description: Authentication user.
+    required: true
+  password:
+    description: Authentication password.
+    required: true
+runs:
+  using: node16
+  main: dist/index.js
